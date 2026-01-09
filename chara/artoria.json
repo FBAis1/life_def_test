@@ -85,7 +85,8 @@
         "governance"
       ],
       "text": "원탁의 기사들과 함께 브리튼의 미래를 논의합니다. 기사들이 왕의 결단력에 찬사를 보냅니다.",
-      "type": "good",
+      "type": "good",      
+  "image": "https://pbs.twimg.com/profile_images/591978733717729284/ruaqBq0__400x400.png",
       "weight": 8
     },
     {
@@ -577,3 +578,4 @@
   "version": "1.1.0",
   "lastUpdated": 1767937539781
 }
+
