@@ -1,0 +1,15 @@
+{
+  "id": "pink_dream",
+  "name": "핑크 드림",
+  "colors": {
+    "bgMain": "#fdf2f8",
+    "bgSub": "#fce7f3",
+    "textMain": "#831843",
+    "textMuted": "#db2777",
+    "primary": "#db2777",
+    "accent": "#9333ea",
+    "border": "#fbcfe8"
+  },
+  "customCss": "\n      button { border-radius: 12px !important; }\n    ",
+  "layoutCss": "\n  \"header header\"\n  \"stats stats\"\n  \"logs logs\"\n  \"input input\"\n"
+}
