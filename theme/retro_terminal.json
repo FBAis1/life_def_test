@@ -1,15 +1,15 @@
 {
-  "id": "pink_dream",
-  "name": "핑크 드림",
+  "id": "retro_terminal",
+  "name": "레트로 터미널",
   "colors": {
-    "bgMain": "#fdf2f8",
-    "bgSub": "#fce7f3",
-    "textMain": "#831843",
-    "textMuted": "#db2777",
-    "primary": "#db2777",
-    "accent": "#9333ea",
-    "border": "#fbcfe8"
+    "bgMain": "#000000",
+    "bgSub": "#111111",
+    "textMain": "#33ff33",
+    "textMuted": "#00cc00",
+    "primary": "#33ff33",
+    "accent": "#ffff00",
+    "border": "#004400"
   },
-  "customCss": "\n      button { border-radius: 12px !important; }\n    ",
-  "layoutCss": "\n  \"header header\"\n  \"stats stats\"\n  \"logs logs\"\n  \"input input\"\n"
+  "customCss": "\n    * { font-family: 'Courier New', Courier, monospace; }\n    button { border-radius: 0 !important; }\n    \n    /* Classic Layout Row Fix: Header(auto) Logs(1fr) Stats(auto) Input(auto) */\n    .app-layout-grid {\n        grid-template-rows: auto 1fr auto auto !important;\n    }\n  ",
+  "layoutCss": "\n  \"header header\"\n  \"logs logs\"\n  \"stats stats\"\n  \"input input\"\n"
 }
