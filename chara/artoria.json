@@ -1,0 +1,467 @@
+{
+  "character": {
+    "bio": "성검의 선택을 받은 브리튼의 왕. 사실은 남장여자.",
+    "name": "아서왕",
+    "stats": [
+      {
+        "description": "왕으로서의 위엄과 백성들의 신뢰도입니다.",
+        "displayType": "bar",
+        "icon": "👑",
+        "key": "prestige",
+        "max": 100,
+        "name": "명성",
+        "value": 50
+      },
+      {
+        "description": "적을 베고 왕국을 지키는 순수한 힘입니다.",
+        "displayType": "number",
+        "icon": "⚔️",
+        "key": "strength",
+        "name": "무력",
+        "value": 15
+      },
+      {
+        "description": "정체를 들키지 않고 여성성을 숨기고 있는 정도입니다.",
+        "displayType": "percent",
+        "icon": "🛡️",
+        "key": "secrecy",
+        "max": 100,
+        "name": "비밀 유지",
+        "value": 90
+      },
+      {
+        "description": "누적된 정신적, 육체적 소모도입니다.",
+        "displayType": "bar",
+        "icon": "💤",
+        "key": "fatigue",
+        "max": 100,
+        "name": "피로도",
+        "value": 10
+      },
+      {
+        "description": "왕국을 이끌어가는 정신적인 동기부여입니다.",
+        "displayType": "bar",
+        "icon": "🔥",
+        "key": "morale",
+        "max": 100,
+        "name": "사기",
+        "value": 70
+      }
+    ],
+    "theme": {
+      "accentColor": "#FFD700",
+      "backgroundColor": "#1A1A1A",
+      "primaryColor": "#4169E1"
+    }
+  },
+  "events": [
+    {
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "prestige"
+        },
+        {
+          "delta": 10,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_training",
+      "tags": [
+        "battle",
+        "daily"
+      ],
+      "text": "원탁의 기사들과 함께 고된 검술 훈련을 진행합니다. 왕의 검술은 여전히 날카롭습니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "secrecy"
+        },
+        {
+          "delta": 5,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_clean_sword",
+      "tags": [
+        "daily"
+      ],
+      "text": "홀로 방에서 성검 엑스칼리버를 닦으며 마음을 정돈합니다. 이 순간만큼은 갑옷의 무게를 잊습니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "prestige"
+        }
+      ],
+      "id": "event_resolve_dispute",
+      "tags": [
+        "politics"
+      ],
+      "text": "영주들 사이의 해묵은 영토 분쟁을 공정하게 중재합니다. 백성들이 왕의 지혜를 칭송합니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 1,
+          "stat": "strength"
+        },
+        {
+          "delta": 5,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_strategy",
+      "tags": [
+        "politics"
+      ],
+      "text": "밤새 전략 지도를 살피며 이민족의 침입에 대비한 방책을 세웁니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -10,
+          "stat": "fatigue"
+        },
+        {
+          "delta": 10,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_meditation",
+      "tags": [
+        "rest"
+      ],
+      "text": "카멜롯 외곽의 숲을 거닐며 자연의 소리에 귀를 기울입니다. 무거운 왕관의 무게가 잠시 가벼워집니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "prestige"
+        },
+        {
+          "delta": 5,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_popular_cheer",
+      "tags": [
+        "daily"
+      ],
+      "text": "시찰 중에 백성들이 환호하며 꽃잎을 뿌립니다. 자신이 지켜야 할 것들이 무엇인지 다시금 깨닫습니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "prestige"
+        },
+        {
+          "delta": 10,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_patrol",
+      "tags": [
+        "battle"
+      ],
+      "text": "직접 국경 지대를 순찰하며 병사들의 사기를 북돋웁니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_library",
+      "tags": [
+        "daily"
+      ],
+      "text": "왕궁 도서관에서 고대 전설에 관한 책을 읽으며 지식을 쌓습니다.",
+      "type": "good",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -10,
+          "stat": "secrecy"
+        },
+        {
+          "delta": -5,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_rumor",
+      "tags": [
+        "mystery"
+      ],
+      "text": "왕의 목소리가 너무 고우며, 수염이 나지 않는다는 의심 섞인 소문이 성내에 돌기 시작합니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -1,
+          "stat": "strength"
+        },
+        {
+          "delta": 15,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_injury",
+      "tags": [
+        "battle"
+      ],
+      "text": "훈련 도중 예기치 못한 부상을 입었습니다. 하지만 정체를 들킬까 봐 시종도 부르지 못하고 홀로 상처를 싸맵니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 25,
+          "stat": "fatigue"
+        },
+        {
+          "delta": -5,
+          "stat": "secrecy"
+        }
+      ],
+      "id": "event_assassin",
+      "tags": [
+        "battle"
+      ],
+      "text": "야습을 시도한 암살자와 격투를 벌입니다. 승리했지만 옷이 찢겨 정체가 탄로 날 뻔했습니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -10,
+          "stat": "prestige"
+        },
+        {
+          "delta": -10,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_tax_issue",
+      "tags": [
+        "politics"
+      ],
+      "text": "흉작으로 인해 세금 징수가 어려워지자 영주들이 반발합니다. 왕의 권위가 흔들립니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -20,
+          "stat": "secrecy"
+        }
+      ],
+      "id": "event_dress_danger",
+      "tags": [
+        "mystery"
+      ],
+      "text": "깊숙이 숨겨두었던 여성용 옷감을 시녀에게 들킬 뻔했습니다. 간신히 둘러댔지만 가슴이 두근거립니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -15,
+          "stat": "morale"
+        },
+        {
+          "delta": -5,
+          "stat": "prestige"
+        }
+      ],
+      "id": "event_knight_discord",
+      "tags": [
+        "politics"
+      ],
+      "text": "원탁의 기사들 사이에서 사소한 질투로 인한 불화가 발생합니다. 팀워크가 무너집니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 20,
+          "stat": "fatigue"
+        },
+        {
+          "delta": -5,
+          "stat": "strength"
+        }
+      ],
+      "id": "event_cold",
+      "tags": [
+        "daily"
+      ],
+      "text": "지독한 독감에 걸렸음에도 왕으로서 강한 모습을 보이기 위해 쉬지 않고 집무를 이어갑니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -15,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_sword_dim",
+      "tags": [
+        "mystery"
+      ],
+      "text": "엑스칼리버의 빛이 평소보다 흐릿해 보입니다. 자신의 자격에 대한 깊은 회의감에 빠집니다.",
+      "type": "fail",
+      "weight": 20,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -35,
+          "stat": "fatigue"
+        },
+        {
+          "delta": 10,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_lake_rest",
+      "tags": [
+        "rest"
+      ],
+      "text": "안개 낀 호숫가에서 조용히 휴식을 취합니다. 호수의 여인이 당신의 고뇌를 위로하는 듯합니다.",
+      "type": "rest",
+      "weight": 10,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": -25,
+          "stat": "fatigue"
+        },
+        {
+          "delta": 20,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_user_tea",
+      "tags": [
+        "romance",
+        "daily"
+      ],
+      "text": "{{user}}와(과) 함께 정원에서 차를 마시며 담소를 나눕니다. 왕이 아닌 한 사람으로서 편안함을 느낍니다.",
+      "type": "rest",
+      "weight": 10,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 30,
+          "stat": "prestige"
+        },
+        {
+          "delta": 5,
+          "stat": "strength"
+        }
+      ],
+      "id": "event_pull_sword",
+      "rewards": {
+        "title": "선택받은 왕",
+        "titleDesc": "운명의 부름에 응답한 자에게 주어지는 칭호입니다.",
+        "achievement": "전설의 시작",
+        "achievementDesc": "바위에 박힌 검을 뽑아 브리튼의 진정한 왕임을 증명했습니다.",
+        "add_tag": [],
+        "remove_tag": []
+      },
+      "tags": [
+        "critical",
+        "battle"
+      ],
+      "text": "과거를 회상합니다. 아무도 뽑지 못했던 바위 속의 검을 당신이 뽑아 올리던 그 순간, 브리튼의 운명이 바뀌었습니다.",
+      "type": "critical",
+      "weight": 2,
+      "conditions": []
+    },
+    {
+      "effects": [
+        {
+          "delta": 25,
+          "stat": "prestige"
+        },
+        {
+          "delta": 15,
+          "stat": "morale"
+        }
+      ],
+      "id": "event_user_knighting",
+      "rewards": {
+        "title": "기사들의 왕",
+        "titleDesc": "충성스러운 기사들을 이끄는 진정한 군주의 칭호입니다.",
+        "achievement": "왕의 동반자",
+        "achievementDesc": "가장 신뢰하는 동료를 정식 기사로 서임했습니다.",
+        "add_tag": [
+          "royal_bond"
+        ],
+        "remove_tag": []
+      },
+      "tags": [
+        "critical",
+        "politics"
+      ],
+      "text": "엄숙한 분위기 속에서 {{user}}의 어깨에 칼날을 대고 정식 기사로 서임합니다. 이제 두 사람의 운명은 하나로 묶였습니다.",
+      "type": "critical",
+      "weight": 2,
+      "conditions": []
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": 1767933015262
+}

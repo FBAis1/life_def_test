@@ -1,0 +1,438 @@
+{
+  "character": {
+    "bio": "주술회전 '최강' 고죠 사토루.",
+    "name": "고죠 사토루",
+    "stats": [
+      {
+        "description": "다양한 술식을 구동하기 위한 에너지원입니다.",
+        "displayType": "number",
+        "icon": "✨",
+        "key": "cursed_energy",
+        "name": "주력량",
+        "value": 10000
+      },
+      {
+        "description": "육안 사용과 업무에 따른 정신적 소모도입니다.",
+        "displayType": "bar",
+        "icon": "⚖️",
+        "key": "fatigue",
+        "max": 100,
+        "name": "피로도",
+        "value": 20
+      },
+      {
+        "description": "무하한 주술의 정밀한 조작 능력입니다.",
+        "displayType": "percent",
+        "icon": "♾️",
+        "key": "limitless",
+        "max": 100,
+        "name": "무하한 숙련도",
+        "value": 90
+      },
+      {
+        "description": "뇌의 효율을 높이기 위한 필수 영양소 섭취량입니다.",
+        "displayType": "number",
+        "icon": "🍰",
+        "key": "sugar_intake",
+        "name": "당분 섭취량",
+        "value": 50
+      }
+    ],
+    "theme": {
+      "accentColor": "#6199FF",
+      "backgroundColor": "#0D0D0D",
+      "primaryColor": "#FFFFFF"
+    }
+  },
+  "events": [
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "sugar_intake"
+        },
+        {
+          "delta": -5,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_kikufuku",
+      "tags": [
+        "daily",
+        "food"
+      ],
+      "text": "센다이 명물 키쿠후쿠 크림 찹쌀떡을 손에 넣었습니다. 역시 맛있는 걸 먹어야 뇌가 돌아가네요.",
+      "type": "good",
+      "weight": 10
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 15,
+          "stat": "cursed_energy"
+        }
+      ],
+      "id": "event_exorcism",
+      "tags": [
+        "battle"
+      ],
+      "text": "1급 주령을 가볍게 정화했습니다. '강함'이란 참 피곤한 일이군요.",
+      "type": "good",
+      "weight": 10
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 1,
+          "stat": "limitless"
+        }
+      ],
+      "id": "event_training",
+      "tags": [
+        "education"
+      ],
+      "text": "학생들을 가르치며 무하한의 새로운 응용법을 떠올렸습니다.",
+      "type": "good",
+      "weight": 8
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": -10,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_teleport",
+      "tags": [
+        "skill"
+      ],
+      "text": "술식 반전 '혁'을 이용해 순식간에 이동했습니다. 차 밀리는 걱정은 없어서 좋네요.",
+      "type": "good",
+      "weight": 8
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "cursed_energy"
+        },
+        {
+          "delta": 5,
+          "stat": "sugar_intake"
+        }
+      ],
+      "id": "event_meeting_user",
+      "tags": [
+        "social"
+      ],
+      "text": "길을 걷다 {{user}}님을 만났습니다. 맛있는 디저트 가게를 추천받아 기분이 좋아졌습니다.",
+      "type": "good",
+      "weight": 5
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 3,
+          "stat": "limitless"
+        }
+      ],
+      "id": "event_meditation",
+      "tags": [
+        "growth"
+      ],
+      "text": "안대를 벗고 잠시 공감각을 예민하게 다듬었습니다. 세계가 더 선명하게 보입니다.",
+      "type": "good",
+      "weight": 7
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "sugar_intake"
+        }
+      ],
+      "id": "event_manga",
+      "tags": [
+        "hobby"
+      ],
+      "text": "임무 대기 중에 만화책을 정독했습니다. 역시 최신 유행은 놓칠 수 없죠.",
+      "type": "good",
+      "weight": 7
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "cursed_energy"
+        },
+        {
+          "delta": -3,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_scaring_elders",
+      "tags": [
+        "daily"
+      ],
+      "text": "주술계 상층부 노인네들을 살짝 겁주었습니다. 반응이 아주 재밌네요.",
+      "type": "good",
+      "weight": 6
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_sold_out",
+      "tags": [
+        "fail"
+      ],
+      "text": "한정판 단팥빵이 눈앞에서 매진되었습니다. 이 세상이 잘못된 게 분명합니다.",
+      "type": "fail",
+      "weight": 10
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 15,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_nagging",
+      "tags": [
+        "social"
+      ],
+      "text": "나나미에게 30분 동안 설교를 들었습니다. 최강도 잔소리는 피할 수 없군요.",
+      "type": "fail",
+      "weight": 9
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "fatigue"
+        },
+        {
+          "delta": -1,
+          "stat": "limitless"
+        }
+      ],
+      "id": "event_user_shadow",
+      "tags": [
+        "social"
+      ],
+      "text": "{{user}}님이 실수로 사토루의 안대를 건드렸습니다. 육안에 너무 많은 정보가 들어와 잠시 어지럽네요.",
+      "type": "fail",
+      "weight": 5
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 20,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_paperwork",
+      "tags": [
+        "work"
+      ],
+      "text": "산더미 같은 보고서 업무가 내려왔습니다. 무하한으로도 서류는 처리할 수 없네요.",
+      "type": "fail",
+      "weight": 8
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 12,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_shirt_stain",
+      "tags": [
+        "daily"
+      ],
+      "text": "비싼 셔츠에 주령의 피가 튀었습니다. 세탁소에 맡겨야 하는데 귀찮군요.",
+      "type": "fail",
+      "weight": 7
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 10,
+          "stat": "fatigue"
+        },
+        {
+          "delta": -5,
+          "stat": "sugar_intake"
+        }
+      ],
+      "id": "event_bad_sugar",
+      "tags": [
+        "food"
+      ],
+      "text": "새로 시도한 카페의 케이크가 너무 맛없었습니다. 최악의 하루입니다.",
+      "type": "fail",
+      "weight": 7
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 5,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_overpowered_boredom",
+      "tags": [
+        "mental"
+      ],
+      "text": "적들이 너무 약해서 하품이 나옵니다. 긴장감 없는 승리는 지루할 뿐입니다.",
+      "type": "fail",
+      "weight": 6
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": 8,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_gakuganji",
+      "tags": [
+        "social"
+      ],
+      "text": "학장님과의 면담은 언제나 따분합니다. 잔소리가 귀에 들어오지 않네요.",
+      "type": "fail",
+      "weight": 6
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": -40,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "event_rest_home",
+      "tags": [
+        "rest"
+      ],
+      "text": "집에서 안대를 벗고 푹 쉬었습니다. 다시 육안을 혹사시킬 준비가 되었네요.",
+      "type": "rest",
+      "weight": 5
+    },
+    {
+      "conditions": [],
+      "effects": [
+        {
+          "delta": -60,
+          "stat": "fatigue"
+        },
+        {
+          "delta": 5,
+          "stat": "limitless"
+        }
+      ],
+      "id": "event_hot_spring",
+      "tags": [
+        "rest"
+      ],
+      "text": "온천 여행을 다녀왔습니다. 뜨거운 물에 몸을 담그니 주력의 흐름이 한결 부드러워집니다.",
+      "type": "rest",
+      "weight": 3
+    },
+    {
+      "conditions": [
+        {
+          "target": "cursed_energy",
+          "type": "stat_min",
+          "value": "12000"
+        }
+      ],
+      "effects": [
+        {
+          "delta": 500,
+          "stat": "cursed_energy"
+        },
+        {
+          "delta": 10,
+          "stat": "limitless"
+        }
+      ],
+      "id": "crit_domain_expansion",
+      "rewards": {
+        "title": "무량공처의 지배자",
+        "titleDesc": "우주와 같은 지식의 영역을 펼치는 자.",
+        "achievement": "영역 전개: 무량공처",
+        "achievementDesc": "끝없는 지식의 바다 속에서 적을 마비시켰습니다.",
+        "add_tag": [
+          "domain_master"
+        ],
+        "remove_tag": []
+      },
+      "tags": [
+        "critical",
+        "battle"
+      ],
+      "text": "영역 전개... '무량공처'. 이 안에서 너희는 그저 죽음을 기다릴 뿐이야.",
+      "type": "critical",
+      "weight": 1
+    },
+    {
+      "conditions": [
+        {
+          "target": "limitless",
+          "type": "stat_min",
+          "value": "95"
+        }
+      ],
+      "effects": [
+        {
+          "delta": 1000,
+          "stat": "cursed_energy"
+        },
+        {
+          "delta": -100,
+          "stat": "fatigue"
+        }
+      ],
+      "id": "crit_honored_one",
+      "rewards": {
+        "title": "현대 최강의 주술사",
+        "titleDesc": "그 어떤 누구도 닿을 수 없는 경지에 이른 자.",
+        "achievement": "천상천하 유아독존",
+        "achievementDesc": "세상 위아래 오직 나만이 홀로 존귀하도다.",
+        "add_tag": [
+          "the_strongest"
+        ],
+        "remove_tag": []
+      },
+      "tags": [
+        "critical",
+        "awakening"
+      ],
+      "text": "천상천하 유아독존. 지금 이 순간, 나는 오직 나 자신으로 존재한다.",
+      "type": "critical",
+      "weight": 1
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": 1767933161776
+}
