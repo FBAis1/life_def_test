@@ -3,7 +3,7 @@
     "name": "아서왕",
     "description": "성검의 선택을 받은 브리튼의 왕.",
     "author": "LifeStream",
-    "url": "http://github.com/FBAis1/life_def_test/blob/main/chara/artoria.json" 
+    "url": "https://raw.githubusercontent.com/FBAis1/life_def_test/refs/heads/main/chara/artoria.json" 
   },
   {
     "name": "김대리",
@@ -19,3 +19,4 @@
   }
 
 ]
+
