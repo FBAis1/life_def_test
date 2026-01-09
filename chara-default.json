@@ -3,12 +3,12 @@
     "name": "아서왕",
     "description": "성검의 선택을 받은 브리튼의 왕.",
     "author": "LifeStream",
-    "url": "https://raw.githubusercontent.com/FBAis1/life_def_test/refs/heads/main/data_arthur.json" 
+    "url": "http://github.com/FBAis1/life_def_test/blob/main/chara/artoria.json" 
   },
   {
-    "name": "사이버펑크 해커",
-    "description": "네오 서울의 뒷골목에서 살아남으세요.",
-    "author": "User1",
-    "url": "https://.../data_hacker.json"
+    "name": "[주술회전] 고죠 사토루",
+    "description": "주술회전 '최강'",
+    "author": "Admin",
+    "url": "https://raw.githubusercontent.com/FBAis1/life_def_test/refs/heads/main/chara/gojo.json"
   }
 ]
